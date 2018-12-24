@@ -28,7 +28,7 @@ export const nuxtI18nSeo = function () {
           hid: 'alternate-hreflang-' + locale[LOCALE_ISO_KEY],
           rel: 'alternate',
           href: BASE_URL + this.switchLocalePath(locale.code),
-          hreflang: locale[LOCALE_ISO_KEY]
+          hreflang: locale[LOCALE_CODE_KEY]
         }
       } else {
         console.warn('[<%= options.MODULE_NAME %>] Locale ISO code is required to generate alternate link')
